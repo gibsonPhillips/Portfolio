@@ -1,18 +1,65 @@
-<div id="tiles"></div>
+<!DOCTYPE html>
+<html lang="en">
 
-<h1 id="title" class="centered">
-  The name of the game is
-  <span class="fancy">Chess</span>.
-</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-<i id="icon" class="fa-solid fa-chess centered"></i>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Rubik:wght@400;700&display=swap"
+        rel="stylesheet">
 
-<a id="source-link" class="meta-link" href="https://cdpn.io/YzXOGpm" target="_blank">
-  <i class="fa-solid fa-link"></i>
-  <span>Source</span>
-</a>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-<a id="yt-link" class="meta-link" href="https://youtu.be/bAwEj_mSzOs" target="_blank">
-  <i class="fa-brands fa-youtube"></i>
-  <span>5 min tutorial</span>
-</a>
+    <!-- imports -->
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+
+<body>
+    <div class="canvas-container">
+        <!--  -->
+        <section class="canvas-section" id="section-1">
+            <div class="tiles-wrapper" id="tiles-1"></div>
+            <h1 class="section-title centered">
+                Project 1
+            </h1>
+            <i class="section-icon fa-solid centered">test</i>
+        </section>
+
+        <section class="canvas-section" id="section-2">
+            <div class="tiles-wrapper" id="tiles-2"></div>
+            <h1 class="section-title centered">
+                Project 2
+            </h1>
+            <i class="section-icon fa-solid centered">test</i>
+        </section>
+
+        <section class="canvas-section" id="section-3">
+            <div class="tiles-wrapper" id="tiles-3"></div>
+            <h1 class="section-title centered">
+                Project 3
+            </h1>
+            <i class="section-icon fa-solid centered">test</i>
+        </section>
+    </div>
+
+    <a id="yt-link" class="meta-link" href="https://github.com/gibsonPhillips" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+        <span>github</span>
+    </a>
+
+    <a id="source-link" class="meta-link" href="https://linkedin.com/in/gibsonPhillips" target="_blank">
+        <i class="fa-solid fa-link"></i>
+        <span>LinkedIn</span>
+    </a>
+
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
