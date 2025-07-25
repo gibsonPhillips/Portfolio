@@ -123,16 +123,16 @@ body.menu-toggled > .meta-link > span {
   color: rgb(30, 30, 30);
 }
 
-#source-link {
+#linkedin-link {
   bottom: 10px;
 }
 
-#source-link > i {
-  color: rgb(94, 106, 210);
+#linkedin-link > i {
+  color: rgb(62, 76, 201);
 }
 
-#yt-link > i {
-  color: rgb(239, 83, 80);
+#github-link > i {
+  color: rgb(163, 163, 163);
 }
 
 .meta-link {
