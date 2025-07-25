@@ -1,3 +1,5 @@
+// Animates the tile transitions with Anime library
+
 import { sectionStates } from './config.js';
 
 export function toggle(sectionId) {

@@ -1,6 +1,6 @@
 :root {
-  --g1: rgb(98, 0, 234);
-  --g2: rgb(236, 64, 122);
+  --g1: rgb(0, 0, 50);
+  --g2: rgb(82, 215, 150);
 }
 
 @keyframes background-pan {
@@ -48,7 +48,7 @@ body.toggled {
   opacity: 0;
 }
 
-.canvas-section.toggled .section-icon {
+.canvas-section.toggled .section-content {
   opacity: 1;
 }
 
@@ -108,9 +108,9 @@ body.toggled {
   line-height: 0.9em;
 }
 
-.section-icon {
+.section-content {
   color: rgba(255, 255, 255, 0.15);
-  font-size: 80vmin;
+  /* font-size: 80vmin; */
   opacity: 0;
   pointer-events: none;
   transition: opacity 1200ms ease;

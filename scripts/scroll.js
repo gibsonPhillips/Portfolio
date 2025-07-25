@@ -17,6 +17,8 @@ function calculateCurrentSection() {
   return index;
 }
 
+
+// navigate sections with arrows
 export function setupKeyboardNavigation() {
   document.addEventListener('keydown', (e) => {
     const currentSection = calculateCurrentSection();
@@ -29,4 +31,31 @@ export function setupKeyboardNavigation() {
       document.getElementById(sections[currentSection - 1].id).scrollIntoView({ behavior: 'smooth' });
     }
   });
+}
+
+
+// make scrolling with mouse just navigate through sections just like with arrows
+let scrollLocked = false;
+export function setupScrollingNavigation() {
+  document.addEventListener('wheel', (e) => {
+    const currentSection = calculateCurrentSection();
+
+    // console.log(`e.deltaY ${e.deltaY} scrollLocked: ${scrollLocked}`)
+
+    if (e.deltaY > 0 && currentSection < sections.length - 1) {
+      // scrollign down I believe
+
+      scrollLocked = true;
+      e.preventDefault();
+      document.getElementById(sections[currentSection + 1].id).scrollIntoView({ behavior: 'smooth' });
+    } else if (e.deltaY < 0 && currentSection > 0) {
+// scrolling up
+
+      scrollLocked = true;
+      e.preventDefault();
+      document.getElementById(sections[currentSection - 1].id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    setTimeout(() => scrollLocked = false, 1000);
+  }, { passive: false});
 }
