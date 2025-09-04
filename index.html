@@ -15,18 +15,66 @@
 
     <!-- imports -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <!--markdown support-->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    <!--tile animation support-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
-<body>
+<body class="cool">
     <div class="canvas-container">
         <!--  -->
         <section class="canvas-section section" id="section-1">
             <div class="tiles-wrapper" id="tiles-1"></div>
             <h1 class="section-title centered">
-                Electron App with OAuth 2.0 endpoint
+                Gibson Phillips
             </h1>
-            <i class="section-content fa-solid centered">test</i>
+
+            <!-- actual (hidden) content -->
+            <div class="section-content centered">
+                <div class="left-box vbox">
+                    <div class="this is just so the flexbox groups these together">
+                        <h1>Gibson Phillips</h1>
+                        <div id="whoami-details">
+                            <p>Cyber <br>Analyst </p>
+                            <p>:: WPI InfoSec </p>
+                            <p>:: 2024-2025</p>
+                            <p>Software <br>Engineer </p>
+                            <p>:: Sanrel </p>
+                            <p>:: 2023</p>
+                            <p>Technicion </p>
+                            <p>:: Freelance </p>
+                            <p>:: 2019-2024</p>
+                            <p>Consultation <br>Agent </p>
+                            <p>:: Geek Squad </p>
+                            <p>:: 2019</p>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <h2>Contact</h2>
+                        <p>650-346-4380</p>
+                        <a href="mailto:gcaryp4@gmail.com">gcaryp4@gmail.com</a>
+                    </div>
+
+                </div>
+                <div class="text-box whoami-boxes">
+                    <h2>Hands on technical experience in software, network infrastructure, and cyber security</h2>
+                </div>
+                <div class="text-box whoami-boxes">
+                    <h2>"Exceptional problem solver and team player" <br><br>-Industry Professionals probably </h2>
+                </div>
+                <div class="text-box whoami-boxes">
+                    <h2>Strong communicator able to bridge technical and non-technical audiences</h2>
+                </div>
+                <div class="text-box whoami-boxes">
+                    <h1>▼▼</h1>
+                    <h2>Scroll for Projects and Reports</h2>
+                    <h1>▼▼</h1>
+
+                </div>
+                <!-- <i class="section-content fa-solid centered">test</i> -->
+            </div>
         </section>
 
         <section class="canvas-section section" id="section-2">
@@ -37,13 +85,43 @@
                 Networking From Scratch
             </h1>
 
-            <!-- hidden content -->
+            <!-- actual hidden content -->
             <div class="section-content centered">
-                <h1>
-                    Networking protocols made from scratch in C!
-                </h1><p>Have you ever wanted to lick your cat?</p>
-                
+                <div class="left-box">
+                    <h1>Networking from Scratch</h1>
+                    <p>To gain further understanding of networking infrastructure and security, I fully tested and
+                        implemented several programs that act in accordance to the network at large. </p>
+                    <h3>UDP</h3>
+                    <p>UDP is the most basic protocal and is run on a client server pair, but given it's a best effort
+                        system, you can still send packets from one active side. </p>
+                    <h3>TCP</h3>
+                    <p>TCP uses these requirements and is run on a client server pair</p>
+                    <h3>Wireshark</h3>
+                    <p>Wireshark uses a number of tools to capture and analyze packets being sent over the network. This
+                        program can passively capture any packets on the network and pass them along to anything else
+                        for further analysis. </p>
+
+                </div>
+                <div class="text-box">
+                    <h2><a href="linkedin.com/in/gibsonphillips">OAuth2 Security</a></h2>
+                    <p>The security of OAuth affords benifits. It's implemented using the standard google whatever</p>
+                </div>
+                <div class="text-box">PICTURE OF MAIN APPLICATION PAGE</div>
+                <div class="text-box">
+                    <h2>Full Stack Application</h2>
+                    <p>This application was designed and developed to be a standalone cross platform application. The
+                        purpose of the
+                        application is to segment songs into sections and can be read more about in the readme found on
+                        github. </p>
+                </div>
+                <div class="text-box">
+                    <h2>Cross Platform Application Using Electron</h2>
+                    <p>Electron enables the application and its wide gammet of packages to be run crossplatform and
+                        without a
+                        browser allowing use without the internet. </p>
+                </div>
             </div>
+
         </section>
 
         <section class="canvas-section section" id="section-3">
@@ -56,10 +134,69 @@
 
             <!-- hidden content -->
             <div class="section-content centered">
-                <h1>
-                    Networking protocols made from scratch in C!
-                </h1><p>Have you ever wanted to lick your cat?</p>
-                
+
+                <div class="left-box vbox">
+                    <div class="this is just so the flexbox groups these together">
+                        <h1>Cyber Reports</h1>
+                        <p>The following are exerpts based on real reports I made from the results of an audit. Some
+                            details have been changed and the company Unreal Inc. is entirely fictional. </p>
+                        <div id="reports-details">
+                            <div>
+                                <h2>
+                                    <a href="html/Executive Summary - Audit Findings.html">Executive Summary - Audit
+                                        Findings</a>
+                                </h2>
+                                <p>Concise executive-level report translating NIST CSF audit findings into actionable
+                                    security insights and business-aligned recommendations</p>
+                            </div>
+                            <div class="separater"></div>
+                            <div>
+                                <h2>
+                                    <a href="html/NIST CSF functions.html">NIST CSF functions</a>
+                                </h2>
+                                <p>Gap analysis report identifying missing NIST CSF controls and outlining remediation
+                                    priorities to strengthen security in cyber </p>
+                            </div>
+                            <div class="separater"></div>
+                            <div>
+                                <h2>
+                                    <a href="html/Remediation Roadmap mapped to NIST CSF.html">Remediation Roadmap
+                                        mapped to
+                                        NIST CSF</a>
+                                </h2>
+                                <p>description of the document above</p>
+
+                            </div>
+                            <div class="separater"></div>
+                            <div>
+                                <h2>
+                                    <a href="html/Remediation Roadmap.html">Remediation Roadmap</a>
+                                </h2>
+                                <p>Remediation roadmap translating NIST CSF audit gaps into prioritized security
+                                    initiatives with timelines and
+                                    ownership</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-box whoami-boxes">
+                    <h2>Hands on technical experience in software, network infrastructure, and cyber security</h2>
+                </div>
+                <div class="text-box whoami-boxes">
+                    <h2>"Exceptional problem solver and team player" <br><br>-Industry Professionals probably </h2>
+                </div>
+                <div class="text-box whoami-boxes">
+                    <h2>Strong communicator able to bridge technical and non-technical audiences</h2>
+                </div>
+                <div class="text-box whoami-boxes">
+                    <h1>▼▼</h1>
+                    <h2>Scroll for Projects and Reports</h2>
+                    <h1>▼▼</h1>
+
+                </div>
+
             </div>
         </section>
     </div>
@@ -70,12 +207,13 @@
     </a>
 
     <a id="linkedin-link" class="meta-link" href="https://linkedin.com/in/gibsonPhillips" target="_blank">
-        <i class="fa-solid fa-linkedin"></i>
-        <span>LinkedIn</span>
+        <!-- <i class="fa-solid fa-linkedin"></i> -->
+        <span>$ LinkedIn</span>
     </a>
 
 
     <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/auto-scroll.js"></script>
 
 </body>
 

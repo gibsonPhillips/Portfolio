@@ -1,3 +1,113 @@
 section-content h1 {
     font-size: 60px;
 }
+
+.code-block {
+    /* colours */
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    /* spacing */
+    /* padding: 1rem; */
+    max-width: 40vw;
+    /* max-height: 90vh; */
+    /* margin: 1rem 0; */
+
+    /* styles */
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+
+    overflow-y: auto;
+
+    line-height: 1.2;
+
+    /* scrolling */
+    scroll-behavior: smooth;
+}
+
+.code-block code {
+    white-space: pre;
+    display: block;
+}
+
+
+/* grid stuff */
+
+.section-content>.left-box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: #93b7ff;
+    padding: 1rem;
+    border-radius: 8px;
+
+
+
+    align-items: center;
+
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* border-radius: 6px; */
+    bottom: 60px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section-content>.text-box {
+    border-radius: 8px;
+
+    align-items: center;
+
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* border-radius: 6px; */
+    bottom: 60px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+    /* internals */
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+
+    /* left: 10px; */
+    /* positioning */
+    padding: 1rem;
+    /* padding: 10px 20px; */
+    /* position: fixed; */
+
+    text-decoration: none;
+    transition: background-color 400ms, border-color 400ms, backdrop-filter 400ms;
+    /* z-index: 10000; */
+}
+
+
+.test-link {
+    color: blue;
+    z-index: 10000;
+    position: relative;
+}
+
+/* INDIVIDUAL ELEMENTS */
+.whoami-boxes {
+    justify-content: center;
+}
+
+#whoami-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#reports-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr 1fr .5fr 1fr .5fr 1fr .5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}

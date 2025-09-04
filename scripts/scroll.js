@@ -49,13 +49,13 @@ export function setupScrollingNavigation() {
       e.preventDefault();
       document.getElementById(sections[currentSection + 1].id).scrollIntoView({ behavior: 'smooth' });
     } else if (e.deltaY < 0 && currentSection > 0) {
-// scrolling up
+      // scrolling up
 
       scrollLocked = true;
       e.preventDefault();
       document.getElementById(sections[currentSection - 1].id).scrollIntoView({ behavior: 'smooth' });
     }
 
-    setTimeout(() => scrollLocked = false, 1000);
-  }, { passive: false});
+    setTimeout(() => scrollLocked = false, 1000); // doesn't do anything as far as I can tell
+  }, { passive: false });
 }
