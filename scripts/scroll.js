@@ -36,8 +36,16 @@ export function setupKeyboardNavigation() {
 
 // make scrolling with mouse just navigate through sections just like with arrows
 let scrollLocked = false;
+let cooldownTime = 1000;
 export function setupScrollingNavigation() {
   document.addEventListener('wheel', (e) => {
+    
+    // handles input overflow for smooth nav
+    if (scrollLocked) {
+      e.preventDefault();
+      return;
+    }
+
     const currentSection = calculateCurrentSection();
 
     // console.log(`e.deltaY ${e.deltaY} scrollLocked: ${scrollLocked}`)
@@ -56,6 +64,6 @@ export function setupScrollingNavigation() {
       document.getElementById(sections[currentSection - 1].id).scrollIntoView({ behavior: 'smooth' });
     }
 
-    setTimeout(() => scrollLocked = false, 1000); // doesn't do anything as far as I can tell
+    setTimeout(() => scrollLocked = false, cooldownTime); 
   }, { passive: false });
 }

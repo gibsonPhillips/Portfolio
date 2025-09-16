@@ -35,6 +35,7 @@ body.cool {
   background-size: 200%, 30%;
   background-blend-mode: overlay;
   /* background-image: var(--i1); */
+  will-change: background-position;
 }
 
 /* markdown pages */
@@ -71,6 +72,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  height: 100%;
 }
 
 .canvas-container {
